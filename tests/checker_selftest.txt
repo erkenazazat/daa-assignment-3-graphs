@@ -1,0 +1,16 @@
+OK  kruskal: valid optimum {1,3,4}
+OK  kruskal: ALTERNATIVE optimum {1,3,5}
+OK  kruskal: non-optimal forest  -> rejected: forest is not optimal
+OK  kruskal: self-loop selected  -> rejected: self-loop selected
+OK  kruskal: wrong cost claimed  -> rejected: cost is not the sum of the selected edges
+OK  scc: valid labels
+OK  scc: ALTERNATIVE labels
+OK  scc: duplicate pair  -> rejected: duplicate condensation pair
+OK  scc: two SCCs under one label  -> rejected: one label covers two different SCCs
+OK  topo: valid order
+OK  topo: ALTERNATIVE order
+OK  topo: edge 0->1 goes backwards  -> rejected: edge 0->1 goes backwards
+OK  dag: valid parents
+OK  dag: ALTERNATIVE parents (tie)
+OK  dag: parent not on a shortest path  -> rejected: parent edge of 3 is not on a shortest path
+selftest: all behaved as expected
