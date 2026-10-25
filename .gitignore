@@ -10,3 +10,5 @@ __pycache__/
 *.key
 .DS_Store
 Thumbs.db
+tests/large_cases.jsonl
+tests/large_output.txt
