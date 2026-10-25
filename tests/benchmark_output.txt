@@ -1,0 +1,20 @@
+Seed: 12345, warm-up runs: 2, timed runs: 5
+Timer: System.nanoTime. Measured: one call to Algorithms.kruskal / Algorithms.prim
+(includes Input conversion and internal graph construction; excludes graph generation, JSON, I/O).
+
+n=10000 m=25000 cost=-5312425755747 components=73
+  kruskal valid: yes, prim valid: yes, same cost: true, same components: true
+  kruskal ms: 7,5 7,3 7,2 7,3 7,2 | median 7,3
+  prim    ms: 4,0 4,2 4,1 3,8 4,5 | median 4,1
+
+n=50000 m=125000 cost=-26245373368024 components=352
+  kruskal valid: yes, prim valid: yes, same cost: true, same components: true
+  kruskal ms: 29,6 21,6 27,0 21,0 20,7 | median 21,6
+  prim    ms: 32,5 31,9 33,0 33,9 33,9 | median 33,0
+
+n=100000 m=250000 cost=-52864712866002 components=725
+  kruskal valid: yes, prim valid: yes, same cost: true, same components: true
+  kruskal ms: 44,6 44,0 44,0 44,4 45,3 | median 44,4
+  prim    ms: 74,2 74,3 75,5 77,5 77,3 | median 75,5
+
+(checksum -1181915167856822)
