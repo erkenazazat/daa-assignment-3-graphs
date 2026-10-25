@@ -1,0 +1,17 @@
+distance    = [0, 3, -4, 0, null]
+parent_edge = [-1, 0, 2, 3, -1]
+route 0->3  = [0, 1, 2, 3]
+PASS reachable target 3: route is [0,1,2,3]
+PASS reachable target 3: cost 0 equals distance
+route 0->0  = [0]
+PASS source: route is [0]
+route 0->4  = []
+PASS unreachable target 4: empty route, distance null
+distance    = [0, 5, 10]
+parent_edge = [-1, 1, 2]
+route 0->2  = [0, 2]
+PASS tied routes: path starts at source, ends at target
+PASS tied routes: edge directions valid and cost 10 equals distance
+route 0->1  = [0, 1]
+PASS parallel edges: route to 1 is [0,1], cost 5
+ALL PASSED
